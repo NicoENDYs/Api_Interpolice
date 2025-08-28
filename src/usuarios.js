@@ -75,7 +75,7 @@ usuarios.get("/usuario/listar/:id", verifyToken, async (req, res) => {
 });
 
 // Insertar usuario método POST
-usuarios.post("/usuario/crear/", verifyToken, async (req, res) => {
+usuarios.post("/usuario/crear/",/* verifyToken,*/ async (req, res) => {
     try {
         // Hashear la contraseña
         const saltRounds = 10;
